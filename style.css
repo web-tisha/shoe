@@ -1,0 +1,901 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    /* height: 80px; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+padding: 20px 30px 0px 0px;
+z-index: 100000;
+}
+header .logo{
+    font-weight: 600;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    transition: 0.2s;
+    margin-left:150px ;
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li {
+    position: relative;
+    list-style: none;
+
+}
+.list2 li a{
+    position: relative;
+    margin: 0 9px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    /* letter-spacing: 2px; */
+    font-weight: 500px;
+    transition: 0.5s;
+}
+.list1 li a{
+    position: relative;
+    margin: 0px 15px 0px 2px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    /* letter-spacing: 2px; */
+    font-weight: 500px;
+    transition: 0.5s;
+}
+header.sticky{
+    /* padding:18px 10px 5px 11px; */
+    background-color: black;
+}
+header.sticky ul li a{
+    color: white;
+
+}
+header.sticky .logo{
+color: white;
+margin-top: -9px;
+}
+header .logo:hover{
+    color: rgb(238, 233, 232);
+}
+.dropdown{
+    position: relative;
+    /* display: inline-block; */
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+   background-color: black;
+    width: 260px;
+    height: 250px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+    /* overflow: scroll; */
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: white    ;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown:hover .dropdown-content {display: block;}
+ #btn1{
+    background-color: rgba(134, 8, 8, 0.918);
+    color: white;
+    border-radius: 0px;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 8px 24px;
+    margin-top: 10px;
+ }
+ .cart{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(54, 52, 52);
+ }
+ #btn1:hover{
+    opacity: 0.8;
+ }
+ #btn2:hover{
+opacity: 0.8;
+ }
+ .one{
+    position: absolute;
+    top: -390px;
+    left: 350px;
+    font-size: 25px;
+    color: whitesmoke;
+ }
+ .h3{
+    position: absolute;
+    top: -360px;
+    left: 280px;
+  font-weight: 600;
+ }
+ .H3{
+    position: absolute;
+    top: -360px;
+    left: 230px;
+  font-weight: 600;
+ }
+ .start1{
+    position: absolute;
+    top: -260px;
+    left: 390px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    background-color: rgb(160, 17, 17);
+    padding: 10px 20px;
+ }
+ .start3:hover{
+    opacity: 0.8;
+ }
+ .start1:hover{
+    opacity: 0.8;
+ }
+ .start2:hover{
+    opacity: 0.8;
+ }
+ .list2 li a :hover{
+    opacity: 0.7;
+ }
+ .one1{
+    position: absolute;
+    top: -310px;
+    left: 66px;
+    font-size: 22px;
+ }
+ .one2{
+    font-size: 22px;
+    position: absolute;
+    top: -310px;
+    left: 18px;
+ }
+.two1,.two2{
+    font-size: 50px;
+    font-weight: 700;
+    position: absolute;
+    top: -280px;
+    left: 37px;
+}
+.two2{
+    font-size: 50px;
+    font-weight: 700;
+    position: absolute;
+    top: -280px;
+    left: 12px;
+}
+.start2{
+    position: absolute;
+    top: -200px;
+    left: 74px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    background-color: rgb(160, 17, 17);
+    padding: 10px 20px;
+ }
+ .start3{
+    position: absolute;
+    top: -200px;
+    left: 70px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    background-color: rgb(160, 17, 17);
+    padding: 10px 20px;
+ }
+ .logo1{
+    margin: -16px 75px 0px 0px;
+    font-size: 45px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    padding: 0px 5px;
+ }
+.con1{
+   padding-top: 50px;
+}
+.all{
+   font-size: 14px;
+   padding-top: 8px;
+}
+.all:hover{
+   color: rgb(109, 4, 4);
+}
+.sp{
+   font-size: 25px;
+   font-weight: 600;
+   padding-bottom: 5px;
+}
+.in1{
+   background-image: url(images/1out.jpg);
+   background-repeat: no-repeat;
+   height: 250px;
+   width: 280px;
+   background-position: center;
+   background-size: contain;
+ }
+ .out1{
+   overflow: hidden;
+   height: 250px;
+   width: 280px;
+ }
+ .out1:hover>.in1:hover{
+   background-image: url(images/1in.jpg);
+   height: 250px;
+   width: 280px;
+   transition: 1.3s;
+   animation: any 2s linear ;
+   }
+   @keyframes any {
+       0%{
+           transform: scale(1);
+       }
+       100%{
+           transform: scale(1.03);
+       }
+     }
+     .in2{
+      background-image: url(images/2out.jpg);
+      background-repeat: no-repeat;
+      height: 250px;
+   width: 280px;
+      background-position: center;
+      background-size: contain;
+    }
+    .out2{
+      overflow: hidden;
+      height: 250px;
+   width: 280px;
+    }
+    .out2:hover>.in2:hover{
+      background-image: url(images/2in.jpg);
+      height: 250px;
+      width: 280px;
+      transition: 1.3s;
+      animation: any 2s linear ;
+      }
+      @keyframes any {
+          0%{
+              transform: scale(1);
+          }
+          100%{
+              transform: scale(1.03);
+          }
+        }
+        .in3{
+         background-image: url(images/3out.jpg);
+         background-repeat: no-repeat;
+         height: 250px;
+         width: 280px;
+         background-position: center;
+         background-size: contain;
+       }
+       .out3{
+         overflow: hidden;
+         height: 250px;
+         width: 280px;
+       }
+       .out3:hover>.in3:hover{
+         background-image: url(images/3in.jpg);
+         height: 250px;
+   width: 280px;
+         transition: 1.3s;
+         animation: any 2s linear ;
+         }
+         @keyframes any {
+             0%{
+                 transform: scale(1);
+             }
+             100%{
+                 transform: scale(1.03);
+             }
+           }
+           .in4{
+            background-image: url(images/4out.jpg);
+            background-repeat: no-repeat;
+            height: 250px;
+   width: 280px;;
+            background-position: center;
+            background-size: contain;
+          }
+          .out4{
+            overflow: hidden;
+            height: 250px;
+   width: 280px;
+          }
+          .out4:hover>.in4:hover{
+            background-image: url(images/4in.jpg);
+            height: 250px;
+   width: 280px;
+            transition: 1.3s;
+            animation: any 2s linear ;
+            }
+            @keyframes any {
+                0%{
+                    transform: scale(1);
+                }
+                100%{
+                    transform: scale(1.03);
+                }
+              }
+              .next{
+                padding-top: 25px;
+              }
+              .nike{
+                padding: 15px 0px 0px 20px;
+              }
+              .nike:hover{
+                color: rgb(173, 28, 28);
+              }
+              .rupe{
+                color: rgb(173, 28, 28);
+                padding: 0px 0px 0px 20px;
+              }
+              .sale{
+                position: absolute;
+                top:910px;
+                left: 200px;
+                font-size: 30px;
+                color: white;
+              }
+              .sale1{
+                position: absolute;
+                top:940px;
+                left: 175px;
+                font-size: 70px;
+                font-weight: 700;
+                color: white;
+              }
+              .sale2{
+                position: absolute;
+                top:1035px;
+                left: 250px;
+                color: white;
+                background-color:  rgb(173, 28, 28);
+                border: none;
+                font-size: 15px;
+                padding: 8px 20px;
+              }
+              .sale2:hover{
+                opacity: 0.9;
+              }
+              .upto{
+                position: absolute;
+                top: 849px;
+                font-size: 23px;
+                font-weight: 400;
+                color: white;
+                left: 112px;
+              }
+              .upto1{
+                position: absolute;
+                top: 870px;
+                font-size: 55px;
+                color: white;
+                font-weight: 700;
+                left:86px;
+              }
+              .upto2{
+                position: absolute;
+                top: 946px;
+                font-size: 17px;
+                font-weight: 400;
+                left: 122px;
+                color: white;
+                background-color:  rgb(173, 28, 28);
+                border: 0px;
+                padding: 8px 20px;
+              }
+              .upto2:hover{
+opacity: 0.8;
+              }
+              .in5{
+                background-image: url(images/1out.jpg);
+                background-repeat: no-repeat;
+                height: 190px;
+                width:185px;
+                background-position: center;
+                background-size: contain;
+              }
+              .out5{
+                overflow: hidden;
+                height: 190px;
+                width:185px;
+              }
+              .out5:hover>.in5:hover{
+                background-image: url(images/1in.jpg);
+                height: 190px;
+                width:185px;
+                transition: 1.3s;
+                animation: any 2s linear ;
+                }
+                @keyframes any {
+                    0%{
+                        transform: scale(1);
+                    }
+                    100%{
+                        transform: scale(1.03);
+                    }
+                  }       
+                  .in6{
+                    background-image: url(images/2out.jpg);
+                    background-repeat: no-repeat;
+                    height: 190px;
+                    width:180px;
+                    background-position: center;
+                    background-size: contain;
+                  }
+                  .out6{
+                    overflow: hidden;
+                    height: 190px;
+                    width:180px;
+                  }
+                  .out6:hover>.in6:hover{
+                    background-image: url(images/2in.jpg);
+                    height: 190px;
+                    width:180px;
+                    transition: 1.3s;
+                    animation: any 2s linear ;
+                    }
+                    @keyframes any {
+                        0%{
+                            transform: scale(1);
+                        }
+                        100%{
+                            transform: scale(1.03);
+                        }
+                      }                        
+                      .in7{
+                        background-image: url(images/3out.jpg);
+                        background-repeat: no-repeat;
+                        height: 190px;
+                        width:185px;
+                        background-position: center;
+                        background-size: contain;
+                      }
+                      .out7{
+                        overflow: hidden;
+                        height: 190px;
+                            width:185px;
+                      }
+                      .out7:hover>.in7:hover{
+                        background-image: url(images/3in.jpg);
+                        height: 190px;
+                            width:185px;
+                        transition: 1.3s;
+                        animation: any 2s linear ;
+                        }
+                        @keyframes any {
+                            0%{
+                                transform: scale(1);
+                            }
+                            100%{
+                                transform: scale(1.03);
+                            }
+                          }
+                          .in8{
+                            background-image: url(images/4out.jpg);
+                            background-repeat: no-repeat;
+                            height: 190px;
+                            width:180px;
+                            background-position: center;
+                            background-size: contain;
+                      
+                          }
+                          .out8{
+                            overflow: hidden;
+                            height: 190px;
+                            width:180px;
+                          }
+                          .out8:hover>.in8:hover{
+                            background-image: url(images/4in.jpg);
+                            height: 190px;
+                            width:180px;
+                            transition: 1.3s;
+                            animation: any 2s linear ;
+                            }
+                            @keyframes any {
+                                0%{
+                                    transform: scale(1);
+                                }
+                                100%{
+                                    transform: scale(1.03);
+                                }
+ }
+.subBan{
+  padding-top: 80px;
+}
+.sub1{
+  position: absolute;
+  top: 1700px;
+  left: 510px;
+  color: white;
+  font-size: 33px;
+}
+.sub2{
+  position: absolute;
+  top: 1735px;
+  left: 470px;
+  color: white;
+  font-weight: 600;
+  font-size: 70px;
+}
+.sub3{
+  padding: 8px 20px;
+  font-size: 12px;
+  color: white;
+  background-color: rgb(240, 16, 8);
+  position: absolute;
+  top: 1839px;
+  left: 619px;
+  border: none;
+}
+.sub3:hover{
+  opacity: 0.8;
+}
+.sub4{
+  position: absolute;
+  top: 1750px;
+  left: 86px;
+  color: white;
+  font-size: 24px;
+}
+.sub5{
+  position: absolute;
+    top: 1775px;
+    left: 56px;
+    color: white;
+    font-size: 45px;
+    font-weight: 700;
+}
+.sub6{
+  padding: 8px 20px;
+  font-size: 12px;
+  color: white;
+  background-color: rgb(240, 16, 8);
+  position: absolute;
+  top: 1840px;
+  left: 130px;
+  border: none;
+}
+.sub6:hover{
+  opacity: 0.8;
+}
+.para1{
+  position: absolute;
+  top: 3191px;
+  left: 534px;
+  color: white;
+  font-size: 37px;
+}
+.para2{
+  position: absolute;
+  top: 3225px;
+  left: 405px;
+  color: white;
+  font-size: 80px;
+  font-weight: 700;
+}
+.para3{
+  padding: 10px 25px;
+  font-size: 12px;
+  color: white;
+  background-color: rgb(240, 16, 8);
+  position: absolute;
+  top: 3340px;
+  left: 638px;
+  border: none;
+}
+.para3:hover{
+  opacity: 0.8;
+}
+.para4{
+  position: absolute;
+  top: 2838px;
+  left: 94px;
+  color: white;
+  font-size: 27px;
+}
+.para5{
+  position: absolute;
+  top: 2870px;
+  left: 49px;
+  color: white;
+  font-size: 45px;
+  font-weight: 700;
+}
+.para6{
+  padding: 10px 25px;
+  font-size: 12px;
+  color:white;
+  background-color: rgb(240, 16, 8);
+  position: absolute;
+  top: 2939px;
+  left: 141px;
+  border: none;
+}
+.para6:hover{
+  opacity: 0.8;
+}
+.up1{
+  position: absolute;
+  top: 3297px;
+  left: 94px;
+  color: white;
+  font-size: 27px;
+}
+.up2{
+  position: absolute;
+  top: 3315px;
+  left: 49px;
+  color: white;
+  font-size: 71px;
+  font-weight: 700;
+}
+.up3{
+  padding: 10px 25px;
+  font-size: 12px;
+  color: white;
+  background-color: rgb(240, 16, 8);
+  position: absolute;
+  top: 3413px;
+  left: 135px;
+  border: none
+}
+.up3:hover{
+  opacity: 0.8;
+}
+.up4{
+  position: absolute;
+  top: 4317px;
+  left: 221px;
+  color: white;
+  font-size: 37px;
+}
+.up5{
+  position: absolute;
+  top: 4253px;
+  left: 240px;
+  color: white;
+  font-size: 55px;
+  font-weight: 700;
+}
+.up6{
+  padding: 10px 25px;
+  font-size: 12px;
+  color: white;
+  background-color: rgb(240, 16, 8);
+  position: absolute;
+  top: 4379px;
+  left: 299px;
+  border: none;
+}
+.up6:hover{
+  opacity: 0.8;
+}
+.new{
+  padding-top: 100px;
+  text-align: center;
+}
+.new1 {
+  font-size: 35px;
+  left: 500px;
+  color: white;
+  position: absolute;
+  top: 5000px;
+}
+.email{
+  font-size: 13px;
+  padding: 0px 5px;
+  height: 43px;
+  width: 300px;
+  left: 479px;
+  color: white;
+  position: absolute;
+  top: 5120px;
+}
+.subs{
+  font-size: 15px;
+  padding: 0px 3px;
+  height: 43px;
+  width: 165px;
+  left: 721px;
+  color: white;
+  background-color: black;
+  position: absolute;
+  top: 5120px;
+}
+.subs:hover{
+  color: black;
+  background-color: #a10b1d;
+  border: none;
+}
+footer{
+background-color: #cb031d;
+  height: 320px;
+  width: 100%;
+}
+.add{
+  font-size: 15px;
+}
+.last{
+  background-color: #a10b1f;
+  color: white;
+}
+.cat:hover{
+  color: rgb(156, 156, 216);
+}
+.cat{
+  font-size: 14px;
+}
+.cover{
+  background-image: url(images/Newsletter.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 410px;
+  margin-top: 30px;
+}
+.new2{
+  position: absolute;
+  top: 4278px;
+  left: 80px;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+}
+.email1{
+  position: absolute;
+  top: 4374px;
+  left: 25px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  height: 51px;
+  width: 210px;
+  padding: 0px 0px 0px 4px;
+}
+.subs1{
+  height: 51px;
+  width: 150px;
+  position: absolute;
+  top: 4375px;
+  left: 232px;
+  color: white;
+  background-color: black;
+  font-size: 14px;
+  padding: 8px 20px;
+  font-weight: 600;
+  border: none;
+}
+.subs1:hover{
+  opacity: 0.8;
+}
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  /* opacity: 0.8; */
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 120px;
+  /* border-radius: 50%; */
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 0.7;
+}
+.accordion {
+  background-color: #cb031d;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 17px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #cb031d ; 
+  color: white;
+  font-size: 20px;
+}
+
+.panel {
+  padding: 18px 10px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  text-align: left;
+  font-size: 22px;
+}
+.cat1{
+  font-size: 17px;
+  /* padding: 5px 10px; */
+  margin: 8px 0px;
+}
+.cat1:hover{
+  background-color: rgb(158, 152, 152);
+  padding: 10px 0px;
+}

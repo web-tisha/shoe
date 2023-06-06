@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+</head>
+
+<body>
+    <header>
+        <ul class="list1 d-md-flex d-none">
+            <li><a href="#">Demo</a></li>
+            <li><a href="#">Shop</a></li>
+            <div class="dropdown">
+                <li><a href="#" class="dropbtn">Product</a>
+                    <div class="dropdown-content ">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+
+                    </div>
+                </li>
+            </div>
+            <li><a href="#">Lookbook</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+        <a href="#" class="logo1 ms-auto d-flex d-md-none">GECKO</a>
+        <a href="#" class="logo  d-none d-md-block">GECKO</a>
+        <ul class="ms-auto list2">
+            <li><a href="#"><i class="fa-solid fa-heart "></i></a></li>
+            <li><a href="#" data-bs-toggle="offcanvas" data-bs-target="#off2"><i class="fa-solid fa-user"></i></a>
+            </li>
+            <div class="offcanvas offcanvas-end w-sm-75 w-md-25" id="off2">
+                <div class="offcanvas-header">
+                    <h2>Contact Form</h2>
+                    <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <hr>
+                <div class="offcanvas-body">
+
+                    <div class="form-group">
+                        <label>Password:</label>
+                        <input type="password" class="form-control">
+                        <small class="form-text text-muted">Yuor password must have 8 words</small>
+                    </div>
+                    <div class="form-group">
+                        <label>Country :</label>
+                        <select name="" id="" class="form-control">
+                            <option value="">India</option>
+                            <option value="">Bangladesh</option>
+                            <option value="">Pakistan</option>
+                            <option value="">Nepal</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label>E-Mail :</label>
+                        <input type="email" placeholder="login with your email" class="form-control">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label>Message :</label>
+                        <textarea name="" class="form-control"></textarea>
+                    </div>
+                    <br>
+                    <button class="btn bg-black text-white " id="btn2"
+                        style="border-radius: 0px; padding: 8px 28px; ">sign in</button>
+                </div>
+            </div>
+            <li><a href="#" data-bs-toggle="offcanvas" data-bs-target="#off1"><i
+                        class="fa-solid fa-magnifying-glass"></i></a></li>
+            <div class="offcanvas offcanvas-end w-sm-75 w-md-25" id="off1">
+                <div class="offcanvas-header">
+                    <h4>Search your Site</h4>
+                    <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <hr>
+                <div class="offcanvas-body p-1">
+                    <div class="form-group">
+                        <!-- <label>Search :</label> -->
+                        <input type="search" class="p-1" style="    height: 54px;
+                width: 335px; border:1px solid rgb(124, 122, 122);" placeholder="Search In:">
+                    </div>
+                </div>
+            </div>
+            <li><a href="#" data-bs-toggle="offcanvas" data-bs-target="#off"><i
+                        class="fa-solid fa-cart-shopping"></i></a></li>
+            <div class="offcanvas offcanvas-end w-sm-75 w-md-25" id="off">
+                <div class="offcanvas-header">
+                    <span class="cart ">Shopping Cart</span>
+
+                    <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+
+                </div>
+                <hr>
+                <div class="offcanvas-body text-center">
+                    <i class="fa-sharp fa-solid fa-bag-shopping d-flex justify-content-center align-content-center display-3"
+                        id="bag"></i><br>
+                    <h6 class="text-dark">your cart is empty</h6>
+                    <button class="btn " id="btn1">Add to Cart</button>
+                </div>
+            </div>
+        </ul>
+    </header>
+    <div class="carousel slide" data-bs-ride="carousel" id="next">
+
+        <div class="carousel-indicators">
+            <button data-bs-target="#next" data-bs-slide-to="0" class="active"></button>
+            <button data-bs-target="#next" data-bs-slide-to="1"></button>
+        </div>
+        <div class="carousel-inner text-center ">
+            <div class="carousel-item  active">
+                <img src="images/main1.webp " class="d-none d-md-block" height="auto" width="100%" alt="">
+                <img src="images/mainSm1.webp" class="d-block d-md-none" height="600px" width="100%" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <div class="one">Sale Upto 50% Off</div>
+                    <div class="h3 display-1">RED NIKE</div>
+                    <button class="start1">START SHOPPING</button>
+                </div>
+                <div class="carousel-caption d-block d-md-none">
+                    <div class="one1">Sale Upto 50% Off</div>
+                    <div class="two1">RED NIKE</div>
+                    <button class="start2">START SHOPPING</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/main2.webp" class="d-none d-md-block" height="auto" width="100%" alt="">
+                <img src="images/mainSm2.webp" class="d-block d-md-none" height="600px" width="100%" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <div class="one">30% Membership discount</div>
+                    <div class="H3 display-2">FINAL CLEARENCE</div>
+                    <button class="start1">PREORDERD NOW</button>
+                </div>
+                <div class="carousel-caption d-block d-md-none">
+                    <div class="one2">30% Membership discount</div>
+                    <div class="two2">CLEARENCE</div>
+                    <button class="start3">PREORDERD NOW</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#next">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+   <div class="container con1 d-none d-md-block">
+   <span class="sp">Handpicked Items</span>
+   <span class="float-end text-decoration-underline all">
+    VIEW ALL PRODUCTS</span>
+    <div class="row pt-4  ">
+       
+        <div class="col-md-6 text-center"><img src="images/first.webp" height="auto" width="100%" alt=""><div class="sale">Sale Upto 50% off</div><div class="sale1">ON SALE</div><button class="sale2">SEE PRODUCTS</button></div>
+        <div class="col-md-6 ">
+<div class="row ">
+    <div class="col-md-6 col-12"><div class="out1"><div class="in1"></div></div><div class="nike ">Nike Zoom Pegasus</div><div class="rupe">$525.00</div></div>
+    <div class="col-md-6 col-12"><div class="out2"><div class="in2"></div></div><div class="nike  ">Jordan Zoom Trunner</div><div class="rupe">$981.00</div></div>
+</div>
+<div class="row next">
+    <div class="col-md-6 col-12"><div class="out3"><div class="in3"></div></div><div class="nike ">Legend React Shield</div><div class="rupe">$712.00</div></div>
+    <div class="col-md-6 col-12"><div class="out4"><div class="in4"></div></div><div class="nike ">Epic Phantom React</div><div class="rupe">$598.00</div></div>
+</div>
+        </div>
+    </div>
+   </div>
+<div class="container d-block d-md-none pt-4">
+    <span class="sp">Handpicked Items</span>
+    <span class="float-end text-decoration-underline all">
+     VIEW ALL PRODUCTS</span>
+    <div class="row">
+        <div class="col-md-6 pt-2"><img src="images/first.webp" height="auto" width="100%" alt="">
+            <div class="upto">Sale Upto 50% off</div><div class="upto1">ON SALE</div><button class="upto2">SEE PRODUCTS</button>
+        </div>
+        <div class="col-md-6">
+            <div class="row pt-1 text-center">
+                <div class="col-6 "><div class="out5"><div class="in5"></div></div><div class="nike1 ">Nike Zoom Pegasus</div><div class="rupe">$525.00</div></div>
+                <div class="col-6"><div class="out6"><div class="in6"></div></div><div class="nike1 ">Nike Zoom Pegasus</div><div class="rupe">$525.00</div></div>
+            </div>
+            <div class="row pt-3 text-center">
+                <div class="col-6"><div class="out7"><div class="in7"></div></div><div class="nike1 ">Nike Zoom Pegasus</div><div class="rupe">$525.00</div></div>
+                <div class="col-6"><div class="out8"><div class="in8"></div></div><div class="nike1 ">Nike Zoom Pegasus</div><div class="rupe">$525.00</div></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="subBan d-none d-md-block"><img src="images/sub-Ban.webp"width= "100%" height="auto" alt="">
+<div class="sub1">Trending Collection 20'</div>
+<div class="sub2">NEW ARRIVAL</div>
+<button class="sub3">SEE COLLECTION</button>
+</div>
+
+<div class="sub pt-5 d-block d-md-none"><img src="images/sub-Ban.webp" height="300px" width="100%" alt="">
+    <div class="sub4">Trending Collection 20'</div>
+    <div class="sub5">NEW ARRIVAL</div>
+    <button class="sub6">SEE COLLECTION</button>
+</div>
+<div class="container con1  d-none d-md-block pb-3">
+    <span class="sp">Featured Products</span>
+    <span class="float-end text-decoration-underline all">
+     VIEW ALL PRODUCTS</span>
+     <div class="row sly pt-4">
+        <div class=" col-md-3"><div class="out1"><div class="in1"></div></div><div class="nike ">Nike Zoom Pegasus</div><div class="rupe">$525.00</div></div>
+        <div class="col-md-3"><div class="out2"><div class="in2"></div></div><div class="nike ">Nike Zoom Pegasus</div><div class="rupe">$525.00</div></div>
+        <div class="col-md-3"><div class="out3"><div class="in3"></div></div><div class="nike ">Nike Zoom Pegasus</div><div class="rupe">$525.00</div></div>
+        <div class="col-md-3"><div class="out4"><div class="in4"></div></div><div class="nike ">Nike Zoom Pegasus</div><div class="rupe">$525.00</div></div>
+        <div class="col-md-3"><div class="out1"><div class="in1"></div></div><div class="nike ">Nike Zoom Pegasus</div><div class="rupe">$525.00</div></div>
+        <div class="col-md-3"><div class="out2"><div class="in2"></div></div><div class="nike ">Nike Zoom Pegasus</div><div class="rupe">$525.00</div></div>
+        <div class="col-md-3"><div class="out3"><div class="in3"></div></div><div class="nike ">Nike Zoom Pegasus</div><div class="rupe">$525.00</div></div>
+        <div class="col-md-3"><div class="out4"><div class="in4"></div></div><div class="nike ">Nike Zoom Pegasus</div><div class="rupe">$525.00</div></div>
+     </div>
+</div>
+<div class="container con1 d-block d-md-none ">
+    <span class="sp">Featured Products</span>
+    <span class="float-end text-decoration-underline all">
+     VIEW ALL PRODUCTS</span>
+    <div class="row sly1 p-1">
+        <div class=" col-md-3"><div class="out5"><div class="in5"></div></div><div class="nike ">Nike Zoom Pegasus</div><div class="rupe">$525.00</div></div>
+        <div class="col-md-3"><div class="out6"><div class="in6"></div></div><div class="nike ">Nike Zoom Pegasus</div><div class="rupe">$525.00</div></div>
+        <div class="col-md-3"><div class="out7"><div class="in7"></div></div><div class="nike ">Nike Zoom Pegasus</div><div class="rupe">$525.00</div></div>
+        <div class="col-md-3"><div class="out8"><div class="in8"></div></div><div class="nike ">Nike Zoom Pegasus</div><div class="rupe">$525.00</div></div>
+        <div class="col-md-3"><div class="out6"><div class="in6"></div></div><div class="nike ">Nike Zoom Pegasus</div><div class="rupe">$525.00</div></div>
+        <div class="col-md-3"><div class="out7"><div class="in7"></div></div><div class="nike ">Nike Zoom Pegasus</div><div class="rupe">$525.00</div></div>
+        <div class="col-md-3"><div class="out8"><div class="in8"></div></div><div class="nike ">Nike Zoom Pegasus</div><div class="rupe">$525.00</div></div>
+        <div class="col-md-3"><div class="out5"><div class="in5"></div></div><div class="nike ">Nike Zoom Pegasus</div><div class="rupe">$525.00</div></div>
+     </div>
+</div>
+<div class="container con1">
+   <h2 class="text-center">Shop By Brands </h2>
+    <div class="row pt-md-4 pt-1 ">
+        <div class="ani col-6 col-md-2 pt-3"><img src="images/icon1.avif" height="90px" width="150px" alt=""></div>
+        <div class="ani col-6 col-md-2"><img src="images/icon2.avif" height="90px" width="150px" alt=""></div>
+        <div class="ani col-6 col-md-2"><img src="images/icon3.avif" height="90px" width="150px" alt=""></div>
+        <div class="ani col-6 col-md-2"><img src="images/icon4.avif" height="90px" width="150px" alt=""></div>
+        <div class="ani col-6 col-md-2"><img src="images/icon5.avif" height="90px" width="150px" alt=""></div>
+        <div class="ani col-6 col-md-2"><img src="images/icon6.avif" height="90px" width="150px" alt=""></div>
+    </div>
+</div>
+<div class="paralex pt-5 " ><img src="images/Parallex_Banner_1512x.webp" width="100%" height="auto" alt="">
+<div class="para1 d-none d-md-block">No Fun Standing Still</div>
+<div class="para2 d-none d-md-block">JUST IN SHOES</div>
+<button class="para3 d-none d-md-block">EXPLORE MORE</button>
+<div class="para4 d-block d-md-none">No Fun Standing Still</div>
+<div class="para5 d-block d-md-none">JUST IN SHOES</div>
+<button class="para6 d-block d-md-none">EXPLORE MORE</button>
+</div>
+
+
+<div class="container d-block d-md-none pt-5">
+    <span class="sp">Best Seller Items</span>
+    <span class="float-end text-decoration-underline all">
+     VIEW ALL PRODUCTS</span>
+    <div class="row">
+        <div class="col-md-6 pt-3"><img src="images/up.webp" height="auto" width="100%" alt="">
+            <div class="up1">Sale Upto 50% off</div><div class="up2">UPLIFTED</div><button class="up3">SEE PRODUCTS</button>
+        </div>
+        <div class="col-md-6">
+            <div class="row pt-1 text-center">
+                <div class="col-6 "><div class="out5"><div class="in5"></div></div><div class="nike1 ">Nike Zoom Pegasus</div><div class="rupe">$525.00</div></div>
+                <div class="col-6"><div class="out6"><div class="in6"></div></div><div class="nike1 ">Nike Zoom Pegasus</div><div class="rupe">$525.00</div></div>
+            </div>
+            <div class="row pt-3 text-center">
+                <div class="col-6"><div class="out7"><div class="in7"></div></div><div class="nike1 ">Nike Zoom Pegasus</div><div class="rupe">$525.00</div></div>
+                <div class="col-6"><div class="out8"><div class="in8"></div></div><div class="nike1 ">Nike Zoom Pegasus</div><div class="rupe">$525.00</div></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container con1 d-none d-md-block">
+    <span class="sp">Best Seller Items</span>
+    <span class="float-end text-decoration-underline all">
+     VIEW ALL PRODUCTS</span>
+     <div class="row pt-4  ">
+        
+         <div class="col-md-6 text-center"><img src="images/up.webp" height="auto" width="100%" alt=""><div class="up4">Sale Upto 50% off</div><div class="up5">UPLIFTED</div><button class="up6">SEE PRODUCTS</button></div>
+         <div class="col-md-6 ">
+ <div class="row ">
+     <div class="col-md-6 col-12"><div class="out1"><div class="in1"></div></div><div class="nike ">Nike Zoom Pegasus</div><div class="rupe">$525.00</div></div>
+     <div class="col-md-6 col-12"><div class="out2"><div class="in2"></div></div><div class="nike  ">Jordan Zoom Trunner</div><div class="rupe">$981.00</div></div>
+ </div>
+ <div class="row next">
+     <div class="col-md-6 col-12"><div class="out3"><div class="in3"></div></div><div class="nike ">Legend React Shield</div><div class="rupe">$712.00</div></div>
+     <div class="col-md-6 col-12"><div class="out4"><div class="in4"></div></div><div class="nike ">Epic Phantom React</div><div class="rupe">$598.00</div></div>
+ </div>
+         </div>
+     </div>
+    </div>
+<div class="new d-none d-md-block"><img src="images/Newsletter.webp" height="auto" width="100%" alt="">
+<div class="new1 d-none d-md-block">Daily Update Of Exclusive<br>
+    Deals & New Shoes</div>
+    <input type="email" class="email d-none d-md-block" placeholder="place your email"><button class="subs d-none d-md-block">SUBSCRIBE</button>
+</div>
+<footer class="text-white d-none d-md-block">
+<div class="container-fluid ">
+<div class="row ">
+<div class="col-md-3 offset-1 py-5">
+    <h2 style="letter-spacing: 13px;">GECKO</h2>
+    <div class="add pt-2" ><i class="fa-solid fa-location-dot px-1"></i>184 Main Rd E, St Albans<br>
+        VIC 3021, Australia</div>
+        <div class="add pt-3"> <i class="fa-sharp fa-solid fa-envelope px-1"></i>contact@company.com</div>
+        <div class="add pt-3"><i class="fa-solid fa-phone px-1"></i> +001 2233 456</div>
+<div class="add pt-3"> <i class="fa-brands fa-facebook-f"></i>
+    <i class="fa-brands fa-pinterest px-2"></i>
+    <i class="fa-brands fa-facebook  px-2"></i>
+    <i class="fa-brands fa-youtube   px-2"></i>
+    <i class="fa-brands fa-twitter   px-2"></i></div>
+</div>
+<div class="col-md-2 py-5">
+    <h6 class="pb-1">CATEGORIES</h6>
+   <div class="cat p-1 px-2">All Shoes</div>
+   <div class="cat p-1 px-2">Running Shoes</div>
+   <div class="cat p-1 px-2">Track Shoes</div>
+   <div class="cat p-1 px-2">Sport Shoes</div>
+   <div class="cat p-1 px-2"> Sneaker</div>
+   <!-- <div class="cat p-1 px-3">All Shoes</div> -->
+</div>
+<div class="col-md-2 py-5"> <h6 class="pb-1">QUICK LINKS</h6>
+   <div class="cat p-1 px-2">Stor Location</div>
+   <div class="cat p-1 px-2">Contact Us</div>
+   <div class="cat p-1 px-2">Returns & Exchanges</div>
+   <div class="cat p-1 px-2">Terms & Conditions
+</div>
+   <div class="cat p-1 px-2">Privacy Policy</div>
+  </div>
+<div class="col-md-2 py-5"> <h6 class="pb-1">INFORMATION</h6>
+   <div class="cat p-1 px-2">My Account</div>
+   <div class="cat p-1 px-2">About Us</div>
+   <div class="cat p-1 px-2">Shortcode Page</div>
+   <div class="cat p-1 px-2">Size Guide</div>
+   <div class="cat p-1 px-2">FAQs Page</div>
+   </div>
+</div>
+</div>
+</footer>
+<div class="last">
+    <div class="container-fluid  d-none d-md-block">
+        <div class="row pt-2">
+            <div class="col-md-5 offset-4">
+                <p>Copyright © 2022 <span style="color: #f72724;">Gecko </span> rights reserved. Powered by The4</p>
+                      </div>
+                      <!-- <div class="col-md-5 offset-2 float-end px-2"> <img src="images/payment.webp" class="img-fluid "height="auto" width="50%"  alt=""></div> -->
+        </div>
+    </div>
+</div>
+<div class="cover d-block d-md-none">
+    <div class="new2 ">Daily Update Of Exclusive<br>
+        Deals & New Shoes</div>
+        <input type="email" class="email1 " placeholder="place your email"><button class="subs1 ">SUBSCRIBE</button>
+</div>
+<button class="open-button" onclick="openForm()">Chat with Us</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat with Us</h1>
+
+    <label for="msg"><b>Message Us</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send </button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+<footer class="d-block d-md-none">
+    <button class="accordion">RESIDENTIAL ADDRESS</button>
+    <div class="panel">
+        <h2 style="letter-spacing: 13px;">GECKO</h2>
+        <div class="add pt-2" ><i class="fa-solid fa-location-dot px-1"></i>184 Main Rd E, St Albans<br>
+            VIC 3021, Australia</div>
+            <div class="add pt-3"> <i class="fa-sharp fa-solid fa-envelope px-1"></i>contact@company.com</div>
+            <div class="add pt-3"><i class="fa-solid fa-phone px-1"></i> +001 2233 456</div>
+    <div class="add pt-3"> <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-pinterest px-2"></i>
+        <i class="fa-brands fa-facebook  px-2"></i>
+        <i class="fa-brands fa-youtube   px-2"></i>
+        <i class="fa-brands fa-twitter   px-2"></i></div>
+    </div>
+    
+    <button class="accordion">CATEGORIES</button>
+    <div class="panel">
+        <!-- <h4 class="pb-1">CATEGORIES</h4> -->
+        <div class="cat1 p-1 px-2">All Shoes</div>
+        <div class="cat1 p-1 px-2">Running Shoes</div>
+        <div class="cat1 p-1 px-2">Track Shoes</div>
+        <div class="cat1 p-1 px-2">Sport Shoes</div>
+        <div class="cat1 p-1 px-2"> Sneaker</div>
+    </div>
+    
+    <button class="accordion">QUICK LINKS</button>
+    <div class="panel">
+        <!-- <h4 class="pb-1">QUICK LINKS</h4> -->
+        <div class="cat1 p-1 py-2 px-2">Stor Location</div>
+        <div class="cat1 p-1 px-2">Contact Us</div>
+        <div class="cat1 p-1 px-2">Returns & Exchanges</div>
+        <div class="cat1 p-1 px-2">Terms & Conditions
+     </div>
+        <div class="cat1 p-1 px-2">Privacy Policy</div>
+    </div>
+    <button class="accordion">INFORMATION</button>
+    <div class="panel">
+        <!-- <h4 class="pb-1">INFORMATION</h4> -->
+        <div class="cat1 p-1 px-2">My Account</div>
+        <div class="cat1 p-1 px-2">About Us</div>
+        <div class="cat1 p-1 px-2">Shortcode Page</div>
+        <div class="cat1 p-1 px-2">Size Guide</div>
+        <div class="cat1 p-1 px-2">FAQs Page</div>
+    </div>
+    
+</footer>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY | 0)
+        })
+    </script>
+    <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script>
+        $('.sly,.sly1').slick({
+          dots: false,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          autoplay: false,
+          autoplaySpeed: 2000,
+          arrow:false,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                infinite: true,
+                dots: true,
+                arrow:false,
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                autoplay:true
+              }
+            }
+          ]
+        });
+      </script>
+</body>
+
+</html>
